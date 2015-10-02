@@ -1,0 +1,11 @@
+/usr/bin/make
+gcc -std=gnu99 -fdiagnostics-color -c -o lab08ex04.o lab08ex04.c
+[01m[Klab08ex04.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Klab08ex04.c:29:2:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kmalloc[m[K’ [-Wimplicit-function-declaration]
+  rugby = malloc(number_of_games * sizeof(int));
+[01;32m[K  ^[m[K
+[01m[Klab08ex04.c:29:10:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kmalloc[m[K’
+  rugby = malloc(number_of_games * sizeof(int));
+[01;32m[K          ^[m[K
+gcc -o lab08ex04 lab08ex04.o 
+exit: 0

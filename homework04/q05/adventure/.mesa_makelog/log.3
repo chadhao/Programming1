@@ -1,0 +1,60 @@
+/usr/bin/make
+Makefile:41: setup.d: No such file or directory
+Makefile:41: crc.d: No such file or directory
+Makefile:41: data.d: No such file or directory
+Makefile:41: done.d: No such file or directory
+Makefile:41: init.d: No such file or directory
+Makefile:41: io.d: No such file or directory
+Makefile:41: main.d: No such file or directory
+Makefile:41: save.d: No such file or directory
+Makefile:41: subr.d: No such file or directory
+Makefile:41: vocab.d: No such file or directory
+Makefile:41: wizard.d: No such file or directory
+./mkdep wizard.c wizard.d gcc -g -O2  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -Iinclude  
+./mkdep vocab.c vocab.d gcc -g -O2  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -Iinclude  
+./mkdep subr.c subr.d gcc -g -O2  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -Iinclude  
+./mkdep save.c save.d gcc -g -O2  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -Iinclude  
+./mkdep main.c main.d gcc -g -O2  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -Iinclude  
+./mkdep io.c io.d gcc -g -O2  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -Iinclude  
+./mkdep init.c init.d gcc -g -O2  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -Iinclude  
+./mkdep done.c done.d gcc -g -O2  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -Iinclude  
+gcc -g -O2  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -Iinclude   -c setup.c -o setup.o
+gcc -Wl,-z,relro setup.o   -o setup
+./setup glorkz >data.c
+./mkdep data.c data.d gcc -g -O2  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -Iinclude  
+./mkdep crc.c crc.d gcc -g -O2  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -Iinclude  
+./mkdep setup.c setup.d gcc -g -O2  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -Iinclude  
+gcc -g -O2  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -Iinclude   -c crc.c -o crc.o
+gcc -g -O2  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -Iinclude   -c data.c -o data.o
+gcc -g -O2  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -Iinclude   -c done.c -o done.o
+gcc -g -O2  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -Iinclude   -c init.c -o init.o
+init.c: In function ‘linkdata’:
+init.c:158:15: warning: iteration 140u invokes undefined behavior [-Waggressive-loop-optimizations]
+   if (ltext[i].seekadr != 0 && travel[i] != 0)
+               ^
+init.c:157:2: note: containing loop
+  for (i = 1; i <= LOCSIZ; i++)
+  ^
+gcc -g -O2  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -Iinclude   -c io.c -o io.o
+io.c: In function ‘getin’:
+io.c:88:3: warning: case label value is less than minimum value for type
+   case EOF:
+   ^
+gcc -g -O2  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -Iinclude   -c main.c -o main.o
+main.c: In function ‘main’:
+main.c:74:2: warning: ignoring return value of ‘setregid’, declared with attribute warn_unused_result [-Wunused-result]
+  setregid(getgid(), getgid());
+  ^
+gcc -g -O2  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -Iinclude   -c save.c -o save.o
+save.c: In function ‘restore’:
+save.c:175:2: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result [-Wunused-result]
+  fread(&sum, sizeof(sum), 1, in); /* Get the seed */
+  ^
+save.c:178:3: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result [-Wunused-result]
+   fread(p->address, p->width, 1, in);
+   ^
+gcc -g -O2  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -Iinclude   -c subr.c -o subr.o
+gcc -g -O2  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -Iinclude   -c vocab.c -o vocab.o
+gcc -g -O2  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -Iinclude   -c wizard.c -o wizard.o
+gcc -Wl,-z,relro crc.o data.o done.o init.o io.o main.o save.o subr.o vocab.o wizard.o   -o adventure
+exit: 0

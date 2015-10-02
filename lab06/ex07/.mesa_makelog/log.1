@@ -1,0 +1,18 @@
+/usr/bin/make
+gcc -std=gnu99 -fdiagnostics-color -c -o lab06ex07.o lab06ex07.c
+[01m[Klab06ex07.c:[m[K In function ‘[01m[Kprint_robot_face[m[K’:
+[01m[Klab06ex07.c:21:2:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kprintf[m[K’ [-Wimplicit-function-declaration]
+  printf("+-----------+\n");
+[01;32m[K  ^[m[K
+[01m[Klab06ex07.c:21:2:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kprintf[m[K’
+[01m[Klab06ex07.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Klab06ex07.c:33:2:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kprint_robot_fact[m[K’ [-Wimplicit-function-declaration]
+  print_robot_fact();
+[01;32m[K  ^[m[K
+gcc -o lab06ex07 lab06ex07.o -lSDL2 -lSDL2_image -lSDL2_ttf -lp1world -lm
+lab06ex07.o: In function `main':
+lab06ex07.c:(.text+0x74): undefined reference to `print_robot_fact'
+collect2: error: ld returned 1 exit status
+Makefile:12: recipe for target 'lab06ex07' failed
+make: *** [lab06ex07] Error 1
+exit: 0

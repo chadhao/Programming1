@@ -1,0 +1,12 @@
+/usr/bin/make
+gcc -std=gnu99 -fdiagnostics-color -c -o test01q07.o test01q07.c
+[01m[Ktest01q07.c:[m[K In function ‘[01m[Kunit_input[m[K’:
+[01m[Ktest01q07.c:79:22:[m[K [01;31m[Kerror: [m[Kinvalid operands to binary & (have ‘[01m[Kchar *[m[K’ and ‘[01m[Kchar *[m[K’)
+    scanf("%[^\n]%*c" &unit);
+[01;32m[K                      ^[m[K
+[01m[Ktest01q07.c:98:22:[m[K [01;31m[Kerror: [m[Kinvalid operands to binary & (have ‘[01m[Kchar *[m[K’ and ‘[01m[Kchar *[m[K’)
+    scanf("%[^\n]%*c" &unit);
+[01;32m[K                      ^[m[K
+Makefile:10: recipe for target 'test01q07.o' failed
+make: *** [test01q07.o] Error 1
+exit: 0

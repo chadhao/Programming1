@@ -1,0 +1,8 @@
+/usr/bin/make
+gcc -std=gnu99 -fdiagnostics-color -D'P1_RESOURCES=/usr/local/share/mesaclient/p1world' -c -o hw08q01.o hw08q01.c
+[01m[Khw08q01.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Khw08q01.c:49:13:[m[K [01;35m[Kwarning: [m[Kassignment makes integer from pointer without a cast
+  game2.year = "2014";
+[01;32m[K             ^[m[K
+gcc -o hw08q01 hw08q01.o -lSDL2 -lSDL2_image -lSDL2_ttf -lp1world -lm
+exit: 0

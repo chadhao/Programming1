@@ -1,0 +1,5 @@
+/usr/bin/make
+gcc -std=gnu99 -fdiagnostics-color -c -o hw03q04.o hw03q04.c
+gcc -std=gnu99 -fdiagnostics-color -c -o hw03q04_test.o hw03q04_test.c
+gcc -o hw03q04_test hw03q04.o hw03q04_test.o -lSDL2 -lSDL2_image -lSDL2_ttf -lp1world -lm
+exit: 0

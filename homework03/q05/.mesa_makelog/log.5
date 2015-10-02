@@ -1,0 +1,25 @@
+/usr/bin/make test
+gcc -std=gnu99 -fdiagnostics-color -c -o hw03q05_test.o hw03q05_test.c
+gcc -o hw03q05_test hw03q05.o hw03q05_test.o -lSDL2 -lSDL2_image -lSDL2_ttf -lp1world -lm
+./hw03q05_test
+INFO: Display #0: current display mode is 1280x1024px @ 60hz. 
+Starting Unit Tests: 
+T1: is "width - 1 == walls"?  - - - - - - - - -FAILED: There should be 9 walls on row Y = 1
+
+T2: is "width - 1 == walls"?  - - - - - - - - -FAILED: There should be 9 walls on row Y = 3
+
+T3: is "width - 1 == walls"?  - - - - - - - - -FAILED: There should be 9 walls on row Y = 5
+
+T4: is "width - 1 == walls"?  - - - - - - - - -FAILED: There should be 9 walls on row Y = 7
+
+T5: is "width - 1 == walls"?  - - - - - - - - -FAILED: There should be 9 walls on row Y = 9
+
+T6: is "height - 1 == get_current_robot_x()"?  FAILED: Robot should have moved to row Y = 10
+
+T7: is "is_robot_dead()"?  - - - - - - - - - - PASSED: Robot should survive
+
+Summary:
+Total Passed: 1 out of 7
+Total Failed: 6 out of 7
+Ending Unit Tests!
+exit: 0

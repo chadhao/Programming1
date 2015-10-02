@@ -1,0 +1,17 @@
+/usr/bin/make test
+make: Warning: File 'Makefile' has modification time 48164 s in the future
+gcc -std=gnu99 -fdiagnostics-color -c -o hw03q05.o hw03q05.c
+gcc -std=gnu99 -fdiagnostics-color -c -o hw03q05_test.o hw03q05_test.c
+[01m[Khw03q05_test.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Khw03q05_test.c:38:3:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[KP1U_ASSERT_EQUALS[m[K’ [-Wimplicit-function-declaration]
+   P1U_ASSERT_EQUALS(message, width - 1, y);
+[01;32m[K   ^[m[K
+gcc -o hw03q05_test hw03q05.o hw03q05_test.o -lSDL2 -lSDL2_image -lSDL2_ttf -lp1world -lm
+hw03q05_test.o: In function `main':
+hw03q05_test.c:(.text+0xe4): undefined reference to `P1U_ASSERT_EQUALS'
+hw03q05_test.c:(.text+0x108): undefined reference to `complete_maze'
+hw03q05_test.c:(.text+0x144): undefined reference to `P1U_ASSERT_EQUALS'
+collect2: error: ld returned 1 exit status
+Makefile:15: recipe for target 'hw03q05_test' failed
+make: *** [hw03q05_test] Error 1
+exit: 0

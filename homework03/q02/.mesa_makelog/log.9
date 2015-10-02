@@ -1,0 +1,29 @@
+/usr/bin/make test
+gcc -std=gnu99 -fdiagnostics-color -c -o hw03q02_test.o hw03q02_test.c
+[01m[Khw03q02_test.c:[m[K In function ‘[01m[Krun_tests[m[K’:
+[01m[Khw03q02_test.c:134:21:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[K)[m[K’ token
+   announce(tests[n].);
+[01;32m[K                     ^[m[K
+[01m[Khw03q02_test.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Khw03q02_test.c:146:3:[m[K [01;35m[Kwarning: [m[Kinitialization from incompatible pointer type
+   { "Test 1 - both beepers", test1 },
+[01;32m[K   ^[m[K
+[01m[Khw03q02_test.c:146:3:[m[K [01;35m[Kwarning: [m[K(near initialization for ‘[01m[Ktests[0].test_func[m[K’)
+[01m[Khw03q02_test.c:147:3:[m[K [01;35m[Kwarning: [m[Kinitialization from incompatible pointer type
+   { "Test 2 - first beeper missing", test2 },
+[01;32m[K   ^[m[K
+[01m[Khw03q02_test.c:147:3:[m[K [01;35m[Kwarning: [m[K(near initialization for ‘[01m[Ktests[1].test_func[m[K’)
+[01m[Khw03q02_test.c:148:3:[m[K [01;35m[Kwarning: [m[Kinitialization from incompatible pointer type
+   { "Test 3 - second beeper missing", test3 },
+[01;32m[K   ^[m[K
+[01m[Khw03q02_test.c:148:3:[m[K [01;35m[Kwarning: [m[K(near initialization for ‘[01m[Ktests[2].test_func[m[K’)
+[01m[Khw03q02_test.c:149:3:[m[K [01;35m[Kwarning: [m[Kinitialization from incompatible pointer type
+   { "Test 4 - both beepers missing", test4 }
+[01;32m[K   ^[m[K
+[01m[Khw03q02_test.c:149:3:[m[K [01;35m[Kwarning: [m[K(near initialization for ‘[01m[Ktests[3].test_func[m[K’)
+[01m[Khw03q02_test.c:152:2:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Krun_test[m[K’ [-Wimplicit-function-declaration]
+  return run_test(TEST_COUNT, tests);
+[01;32m[K  ^[m[K
+Makefile:12: recipe for target 'hw03q02_test.o' failed
+make: *** [hw03q02_test.o] Error 1
+exit: 0

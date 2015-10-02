@@ -1,0 +1,13 @@
+/usr/bin/make test
+gcc -std=gnu99 -fdiagnostics-color -c -o hw03q02_test.o hw03q02_test.c
+[01m[Khw03q02_test.c:[m[K In function ‘[01m[Kannounce[m[K’:
+[01m[Khw03q02_test.c:14:2:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kflush[m[K’ [-Wimplicit-function-declaration]
+  flush();
+[01;32m[K  ^[m[K
+gcc -o hw03q02_test hw03q02.o hw03q02_test.o -lSDL2 -lSDL2_image -lSDL2_ttf -lp1world -lm
+hw03q02_test.o: In function `announce':
+hw03q02_test.c:(.text+0x18): undefined reference to `flush'
+collect2: error: ld returned 1 exit status
+Makefile:15: recipe for target 'hw03q02_test' failed
+make: *** [hw03q02_test] Error 1
+exit: 0

@@ -1,0 +1,9 @@
+/usr/bin/make
+gcc -std=gnu99 -fdiagnostics-color -D'P1_RESOURCES="/usr/local/share/mesaclient/p1world"' -c -o hw06q08.o hw06q08.c
+[01m[Khw06q08.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Khw06q08.c:29:2:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kprintf[m[K’ [-Wimplicit-function-declaration]
+  printf("Red: %d\n", r);
+[01;32m[K  ^[m[K
+[01m[Khw06q08.c:29:2:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kprintf[m[K’
+gcc -o hw06q08 p1renderer.o p1image.o hw06q08.o -lSDL2 -lSDL2_image -lSDL2_ttf -lp1world -lm
+exit: 0

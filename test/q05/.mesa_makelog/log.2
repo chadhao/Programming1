@@ -1,0 +1,9 @@
+/usr/bin/make test
+gcc -std=gnu99 -fdiagnostics-color -c -o test01q05.o test01q05.c
+gcc -o test01q05_test test01q05.o test01q05_test.o -lSDL2 -lSDL2_image -lSDL2_ttf -lp1world -lm
+./test01q05_test
+Starting Unit Tests: 
+Test 1: More than four spaces
+INFO: Display #0: current display mode is 1680x1050px @ 60hz. 
+Error: *Program stopped early by user! 
+exit: 0

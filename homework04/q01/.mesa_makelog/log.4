@@ -1,0 +1,11 @@
+/usr/bin/make
+cc -std=gnu99 -fdiagnostics-color   -c -o hw04q01.o hw04q01.c
+[01m[Khw04q01.c:[m[K In function ‘[01m[Kconfirm[m[K’:
+[01m[Khw04q01.c:33:31:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   else if (c[1] == '\0' && (c =='n' || c == 'N'))
+[01;32m[K                               ^[m[K
+[01m[Khw04q01.c:33:42:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   else if (c[1] == '\0' && (c =='n' || c == 'N'))
+[01;32m[K                                          ^[m[K
+gcc -o hw04q01 hw04q01.o -lSDL2 -lSDL2_image -lSDL2_ttf -lp1world -lm
+exit: 0

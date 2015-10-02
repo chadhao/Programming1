@@ -1,0 +1,4 @@
+/usr/bin/make
+gcc -std=gnu99 -fdiagnostics-color -D'P1_RESOURCES=/usr/local/share/mesaclient/p1world' -c -o hw08q02.o hw08q02.c
+gcc -o hw08q02 hw08q02.o -lSDL2 -lSDL2_image -lSDL2_ttf -lp1world -lm
+exit: 0

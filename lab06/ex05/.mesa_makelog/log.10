@@ -1,0 +1,10 @@
+/usr/bin/make test
+./lab06ex05_test
+INFO: Display #0: current display mode is 1680x1050px @ 60hz. 
+Starting Unit Tests: 
+T1: is "is_item_present(1, y)"?  - - - - - - - PASSED: There should be a beeper at (1, 2)
+T2: is "is_item_present(1, y)"?  - - - - - - - PASSED: There should be a beeper at (1, 3)
+T3: is "is_item_present(1, y)"?  - - - - - - - PASSED: There should be a beeper at (1, 4)
+T4: is "is_item_present(1, y)"?  - - - - - - - PASSED: There should be a beeper at (1, 5)
+T5: is "is_robot_dead()"?  - - - - - - - - - - PASSED: Robot should survive
+exit: 0

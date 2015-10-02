@@ -1,0 +1,30 @@
+Date: 08/06/2015
+Time: 1:00PM
+Log:
+Start to design the game "blackjack"
+
+Date: 08/06/2015
+Time: 4:00PM
+Log:
+Try to find a efficient way to shuffle cards.
+Shuffle a set of cards for 100,000 times, the max deviation is around 2%.
+
+Date: 09/06/2015
+Time: 11:30AM
+Log:
+Begin to implement the game.
+
+Date: 09/06/2015
+Time: 2:00PM
+Log:
+Implement day 2.
+
+Date: 10/06/2015
+Time: 2:00PM
+Log:
+Finish game algorithm, start to implement save & load function.
+
+Date: 11/06/2015
+Time: 11:00PM
+Log:
+Coding finished, several bugs remain.

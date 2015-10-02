@@ -1,0 +1,20 @@
+/usr/bin/make
+gcc -std=gnu99 -fdiagnostics-color -D'P1_RESOURCES=/usr/local/share/mesaclient/p1world' -c -o hw07q07.o hw07q07.c
+[01m[Khw07q07.c:[m[K In function ‘[01m[Kappend[m[K’:
+[01m[Khw07q07.c:27:20:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+  for (int i = 0; i < line_counter-1; i++)
+[01;32m[K                    ^[m[K
+[01m[Khw07q07.c:31:17:[m[K [01;31m[Kerror: [m[Karray subscript is not an integer
+  strcpy(temp_arr[line_counter-1], input_buffer);
+[01;32m[K                 ^[m[K
+[01m[Khw07q07.c:[m[K In function ‘[01m[Klist[m[K’:
+[01m[Khw07q07.c:49:4:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kchar[m[K’
+    char* p = malloc(sizeof(char) * (length+1));
+[01;32m[K    ^[m[K
+[01m[Khw07q07.c:50:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kp[m[K’ undeclared (first use in this function)
+    strcpy(p, content[i]);
+[01;32m[K           ^[m[K
+[01m[Khw07q07.c:50:11:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+Makefile:54: recipe for target 'hw07q07.o' failed
+make: *** [hw07q07.o] Error 1
+exit: 0

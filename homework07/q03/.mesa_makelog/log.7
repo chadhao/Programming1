@@ -1,0 +1,10 @@
+/usr/bin/make test
+gcc -std=gnu99 -fdiagnostics-color -D'P1_RESOURCES=/usr/local/share/mesaclient/p1world' -DTEST -c -o hw07q03.to hw07q03.c
+strip -N main hw07q03.to
+gcc -o hw07q03.test hw07q03.to -lSDL2 -lSDL2_image -lSDL2_ttf -lp1world -lm
+/usr/lib/gcc/arm-linux-gnueabihf/4.9/../../../arm-linux-gnueabihf/crt1.o: In function `_start':
+/build/glibc-mDPUnG/glibc-2.19/csu/../ports/sysdeps/arm/start.S:119: undefined reference to `main'
+collect2: error: ld returned 1 exit status
+Makefile:49: recipe for target 'hw07q03.test' failed
+make: *** [hw07q03.test] Error 1
+exit: 0

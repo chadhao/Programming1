@@ -1,0 +1,13 @@
+/usr/bin/make
+gcc -std=gnu99 -fdiagnostics-color -D'P1_RESOURCES=/usr/local/share/mesaclient/p1world' -c -o hw07q02.o hw07q02.c
+[01m[Khw07q02.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Khw07q02.c:55:2:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kforwards[m[K’ [-Wimplicit-function-declaration]
+  forwards(-150);
+[01;32m[K  ^[m[K
+gcc -o hw07q02 hw07q02.o -lSDL2 -lSDL2_image -lSDL2_ttf -lp1world -lm
+hw07q02.o: In function `main':
+hw07q02.c:(.text+0x13c): undefined reference to `forwards'
+collect2: error: ld returned 1 exit status
+Makefile:58: recipe for target 'hw07q02' failed
+make: *** [hw07q02] Error 1
+exit: 0

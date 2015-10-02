@@ -1,0 +1,9 @@
+/usr/bin/make
+cc -std=gnu99 -fdiagnostics-color   -c -o hw04q05.o hw04q05.c
+[01m[Khw04q05.c:[m[K In function ‘[01m[Kmap0[m[K’:
+[01m[Khw04q05.c:174:3:[m[K [01;31m[Kerror: [m[Klabel ‘[01m[Kq0[m[K’ used but not defined
+   goto q0;
+[01;32m[K   ^[m[K
+<builtin>: recipe for target 'hw04q05.o' failed
+make: *** [hw04q05.o] Error 1
+exit: 0

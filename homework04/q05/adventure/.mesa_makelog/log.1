@@ -1,0 +1,17 @@
+/usr/bin/make
+Makefile:41: setup.d: No such file or directory
+Makefile:41: crc.d: No such file or directory
+Makefile:41: data.d: No such file or directory
+Makefile:41: done.d: No such file or directory
+Makefile:41: init.d: No such file or directory
+Makefile:41: io.d: No such file or directory
+Makefile:41: main.d: No such file or directory
+Makefile:41: save.d: No such file or directory
+Makefile:41: subr.d: No such file or directory
+Makefile:41: vocab.d: No such file or directory
+Makefile:41: wizard.d: No such file or directory
+./mkdep wizard.c wizard.d gcc -g -O2  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -Iinclude  
+make: execvp: ./mkdep: Permission denied
+Makefile:39: recipe for target 'wizard.d' failed
+make: *** [wizard.d] Error 127
+exit: 0

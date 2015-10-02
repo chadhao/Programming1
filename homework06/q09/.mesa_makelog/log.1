@@ -1,0 +1,6 @@
+/usr/bin/make
+gcc -std=gnu99 -fdiagnostics-color -D'P1_RESOURCES="/usr/local/share/mesaclient/p1world"' -c -o p1renderer.o p1renderer.c
+gcc -std=gnu99 -fdiagnostics-color -D'P1_RESOURCES="/usr/local/share/mesaclient/p1world"' -c -o p1image.o p1image.c
+gcc -std=gnu99 -fdiagnostics-color -D'P1_RESOURCES="/usr/local/share/mesaclient/p1world"' -c -o hw06q09.o hw06q09.c
+gcc -o hw06q09 p1renderer.o p1image.o hw06q09.o -lSDL2 -lSDL2_image -lSDL2_ttf -lp1world -lm
+exit: 0

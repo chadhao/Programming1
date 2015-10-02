@@ -1,0 +1,10 @@
+/usr/bin/make
+gcc -std=gnu99 -fdiagnostics-color -D'P1_RESOURCES="/usr/local/share/mesaclient/p1world"' -c -o hw06q06.o hw06q06.c
+gcc -o hw06q06 p1renderer.o p1image.o hw06q06.o -lSDL2 -lSDL2_image -lSDL2_ttf -lp1world -lm
+hw06q06.o: In function `get_random':
+hw06q06.c:(.text+0x0): multiple definition of `get_random'
+p1image.o:p1image.c:(.text+0xc0): first defined here
+collect2: error: ld returned 1 exit status
+Makefile:58: recipe for target 'hw06q06' failed
+make: *** [hw06q06] Error 1
+exit: 0

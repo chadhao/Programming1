@@ -1,0 +1,15 @@
+/usr/bin/make
+gcc -std=gnu99 -fdiagnostics-color -c -o hw01q03.o hw01q03.c
+[01m[Khw01q03.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Khw01q03.c:64:5:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kdraw_rectangle[m[K’ [-Wimplicit-function-declaration]
+     draw_rectangle(BLUE, LEFT);
+[01;32m[K     ^[m[K
+[01m[Khw01q03.c:[m[K At top level:
+[01m[Khw01q03.c:86:6:[m[K [01;35m[Kwarning: [m[Kconflicting types for ‘[01m[Kdraw_rectangle[m[K’
+ void draw_rectangle(char colour, char direction)
+[01;32m[K      ^[m[K
+[01m[Khw01q03.c:64:5:[m[K [01;36m[Knote: [m[Kprevious implicit declaration of ‘[01m[Kdraw_rectangle[m[K’ was here
+     draw_rectangle(BLUE, LEFT);
+[01;32m[K     ^[m[K
+gcc -o hw01q03 hw01q03.o -lSDL2 -lSDL2_image -lSDL2_ttf -lp1world -lm
+exit: 0

@@ -1,0 +1,15 @@
+/usr/bin/make
+gcc -std=gnu99 -fdiagnostics-color -c -o lab08ex02.o lab08ex02.c
+[01m[Klab08ex02.c:[m[K In function ‘[01m[Krandom_dice[m[K’:
+[01m[Klab08ex02.c:21:2:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Ksrand[m[K’ [-Wimplicit-function-declaration]
+  srand(clock());
+[01;32m[K  ^[m[K
+[01m[Klab08ex02.c:22:2:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Krand[m[K’ [-Wimplicit-function-declaration]
+  return (rand() % 6) + 1;
+[01;32m[K  ^[m[K
+[01m[Klab08ex02.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Klab08ex02.c:44:9:[m[K [01;35m[Kwarning: [m[Kunknown escape sequence: '\;'
+  printf("main: calling: roll_dice(%p, %p)\;\n", &dice1);
+[01;32m[K         ^[m[K
+gcc -o lab08ex02 lab08ex02.o 
+exit: 0

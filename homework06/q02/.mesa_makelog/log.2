@@ -1,0 +1,13 @@
+/usr/bin/make
+gcc -std=gnu99 -fdiagnostics-color -D'P1_RESOURCES=/usr/local/share/mesaclient/p1world' -c -o hw06q02.o hw06q02.c
+[01m[Khw06q02.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Khw06q02.c:73:2:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kright_aligned_triangle[m[K’ [-Wimplicit-function-declaration]
+  right_aligned_triangle();
+[01;32m[K  ^[m[K
+gcc -o hw06q02 hw06q02.o -lSDL2 -lSDL2_image -lSDL2_ttf -lp1world -lm
+hw06q02.o: In function `main':
+hw06q02.c:(.text+0x11c): undefined reference to `right_aligned_triangle'
+collect2: error: ld returned 1 exit status
+Makefile:58: recipe for target 'hw06q02' failed
+make: *** [hw06q02] Error 1
+exit: 0

@@ -1,0 +1,32 @@
+/usr/bin/make test
+gcc -std=gnu99 -fdiagnostics-color -c -o hw03q03_test.o hw03q03_test.c
+gcc -o hw03q03_test hw03q03.o hw03q03_test.o -lSDL2 -lSDL2_image -lSDL2_ttf -lp1world -lm
+./hw03q03_test
+
+================
+Test 1 - Beeper and door both to south
+================
+...
+
+INFO: Display #0: current display mode is 1280x1024px @ 60hz. 
+Starting Unit Tests: 
+T1: is "1 == get_count_of_beepers_at(7, 1)"?  -FAILED: There should be 1 beeper at (7, 1)
+T2: is "7 == get_current_robot_x()"?  - - - - -FAILED: Robot should be at X = 7
+T3: is "1 == get_current_robot_y()"?  - - - - -FAILED: Robot should be at Y = 1
+T4: is "get_current_robot_orientation() == get_east()"? FAILED: Robot should be facing east
+T5: is "is_robot_dead()"?  - - - - - - - - - - FAILED: Robot should survive
+
+Summary:
+Total Passed: 0 out of 5
+Total Failed: 5 out of 5
+Ending Unit Tests!
+
+================
+Test 2 - Beeper to south, door to north
+================
+...
+
+INFO: Display #0: current display mode is 1280x1024px @ 60hz. 
+Starting Unit Tests: 
+Error: *Program stopped early by user! 
+exit: 0

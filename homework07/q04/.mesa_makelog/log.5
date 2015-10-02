@@ -1,0 +1,16 @@
+/usr/bin/make test
+gcc -std=gnu99 -fdiagnostics-color -D'P1_RESOURCES=/usr/local/share/mesaclient/p1world' -DTEST -c -o hw07q04.to hw07q04.c
+gcc -std=gnu99 -fdiagnostics-color -D'P1_RESOURCES=/usr/local/share/mesaclient/p1world' -DTEST -c -o hw07q04.test.to hw07q04.test.c
+strip -N main hw07q04.to
+gcc -o hw07q04.test hw07q04.to hw07q04.test.to -lSDL2 -lSDL2_image -lSDL2_ttf -lp1world -lm
+./hw07q04.test
+Starting Unit Tests: 
+T1: is "substring matches expected"?  - - - - -PASSED: String is "rhinoceros", substring should be "rhino"
+T2: is "substring matches expected"?  - - - - -PASSED: String is "unexpected", substring should be "expect"
+T3: is "substring matches expected"?  - - - - -PASSED: String is "banana", substring should be "nana"
+
+Summary:
+Total Passed: 3 out of 3
+Total Failed: 0 out of 3
+Ending Unit Tests!
+exit: 0

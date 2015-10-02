@@ -1,0 +1,20 @@
+Overview:
+This is a Blackjack poker game.
+It is played with four decks of 52 cards(total 208 cards).
+Dealer stops hit at 17 or more.
+Player CANNOT split cards in this game.
+
+Features:
+1. Record player information, including name, chips, times of win, lose and push.
+2. Double, hit and stand.
+3. When dealer shows an Ace, player can choose if he/she wants to insure.
+4. Save & load player record.
+5. Basic statistical information.
+
+Algorithm:
+1. poker deck shuffle algorithm: random switch two poker cards' place.
+2. deal and record each card.
+3. calculate total value of cards, assign Ace value based on current total value automatically.
+
+Interface:
+Player can interact with dealer(computer) through input of characters or numbers.

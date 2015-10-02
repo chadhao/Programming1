@@ -1,0 +1,13 @@
+/usr/bin/make
+gcc -std=gnu99 -fdiagnostics-color -c -o q01.o q01.c
+[01m[Kq01.c:[m[K In function ‘[01m[Kdraw_inverted_triangle[m[K’:
+[01m[Kq01.c:41:2:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Ktuan[m[K’ [-Wimplicit-function-declaration]
+  tuan(-30);
+[01;32m[K  ^[m[K
+gcc -o q01 q01.o -lSDL2 -lSDL2_image -lSDL2_ttf -lp1world -lm
+q01.o: In function `draw_inverted_triangle':
+q01.c:(.text+0xd8): undefined reference to `tuan'
+collect2: error: ld returned 1 exit status
+Makefile:11: recipe for target 'q01' failed
+make: *** [q01] Error 1
+exit: 0

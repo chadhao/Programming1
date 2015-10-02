@@ -1,0 +1,14 @@
+/usr/bin/make
+gcc -std=gnu99 -fdiagnostics-color -D'P1_RESOURCES=/usr/local/share/mesaclient/p1world' -c -o hw08q02.o hw08q02.c
+[01m[Khw08q02.c:[m[K In function ‘[01m[Kadd_new_node[m[K’:
+[01m[Khw08q02.c:32:9:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kmalloc[m[K’ [-Wimplicit-function-declaration]
+  struct Node* new = malloc(sizeof(struct Node));
+[01;32m[K         ^[m[K
+[01m[Khw08q02.c:32:21:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kmalloc[m[K’
+  struct Node* new = malloc(sizeof(struct Node));
+[01;32m[K                     ^[m[K
+[01m[Khw08q02.c:45:12:[m[K [01;35m[Kwarning: [m[Kassignment from incompatible pointer type
+  g_p_first = &new;
+[01;32m[K            ^[m[K
+gcc -o hw08q02 hw08q02.o -lSDL2 -lSDL2_image -lSDL2_ttf -lp1world -lm
+exit: 0

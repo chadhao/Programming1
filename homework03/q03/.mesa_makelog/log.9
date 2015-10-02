@@ -1,0 +1,79 @@
+/usr/bin/make test
+gcc -std=gnu99 -fdiagnostics-color -c -o hw03q03.o hw03q03.c
+gcc -o hw03q03_test hw03q03.o hw03q03_test.o -lSDL2 -lSDL2_image -lSDL2_ttf -lp1world -lm
+./hw03q03_test
+
+================
+Test 1 - Beeper and door both to south
+================
+...
+
+INFO: Display #0: current display mode is 1280x1024px @ 60hz. 
+Starting Unit Tests: 
+T1: is "1 == get_count_of_beepers_at(7, 1)"?  -FAILED: There should be 1 beeper at (7, 1)
+T2: is "7 == get_current_robot_x()"?  - - - - -PASSED: Robot should be at X = 7
+T3: is "1 == get_current_robot_y()"?  - - - - -PASSED: Robot should be at Y = 1
+T4: is "get_current_robot_orientation() == get_east()"? PASSED: Robot should be facing east
+T5: is "is_robot_dead()"?  - - - - - - - - - - PASSED: Robot should survive
+
+Summary:
+Total Passed: 4 out of 5
+Total Failed: 1 out of 5
+Ending Unit Tests!
+
+================
+Test 2 - Beeper to south, door to north
+================
+...
+
+INFO: Display #0: current display mode is 1280x1024px @ 60hz. 
+Starting Unit Tests: 
+T6: is "1 == get_count_of_beepers_at(7, 5)"?  -FAILED: There should be 1 beeper at (7, 5)
+T7: is "7 == get_current_robot_x()"?  - - - - -PASSED: Robot should be at X = 7
+T8: is "5 == get_current_robot_y()"?  - - - - -PASSED: Robot should be at Y = 5
+T9: is "get_current_robot_orientation() == get_east()"? PASSED: Robot should be facing east
+T10: is "is_robot_dead()"?  - - - - - - - - - -PASSED: Robot should survive
+
+Summary:
+Total Passed: 8 out of 10
+Total Failed: 2 out of 10
+Ending Unit Tests!
+
+================
+Test 3 - Beeper and door both to north
+================
+...
+
+INFO: Display #0: current display mode is 1280x1024px @ 60hz. 
+Starting Unit Tests: 
+T11: is "1 == get_count_of_beepers_at(7, 5)"?  FAILED: There should be 1 beeper at (7, 5)
+T12: is "7 == get_current_robot_x()"?  - - - - FAILED: Robot should be at X = 7
+T13: is "5 == get_current_robot_y()"?  - - - - PASSED: Robot should be at Y = 5
+T14: is "get_current_robot_orientation() == get_east()"? PASSED: Robot should be facing east
+T15: is "is_robot_dead()"?  - - - - - - - - - -PASSED: Robot should survive
+
+Summary:
+Total Passed: 11 out of 15
+Total Failed: 4 out of 15
+Ending Unit Tests!
+
+================
+Test 4 - Beeper to north, door to south
+================
+...
+
+INFO: Display #0: current display mode is 1280x1024px @ 60hz. 
+Starting Unit Tests: 
+T16: is "1 == get_count_of_beepers_at(7, 1)"?  FAILED: There should be 1 beeper at (7, 1)
+T17: is "7 == get_current_robot_x()"?  - - - - FAILED: Robot should be at X = 7
+T18: is "1 == get_current_robot_y()"?  - - - - FAILED: Robot should be at Y = 1
+T19: is "get_current_robot_orientation() == get_east()"? PASSED: Robot should be facing east
+T20: is "is_robot_dead()"?  - - - - - - - - - -PASSED: Robot should survive
+
+Summary:
+Total Passed: 13 out of 20
+Total Failed: 7 out of 20
+Ending Unit Tests!
+Makefile:18: recipe for target 'test' failed
+make: *** [test] Error 4
+exit: 0

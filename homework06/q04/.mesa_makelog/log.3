@@ -1,0 +1,20 @@
+/usr/bin/make test
+gcc -std=gnu99 -fdiagnostics-color -D'P1_RESOURCES=/usr/local/share/mesaclient/p1world' -DTEST -c -o model.to model.c
+strip -N main model.to hw06q04.to
+gcc -o hw06q04.test model.to hw06q04.to hw06q04.test.to -lSDL2 -lSDL2_image -lSDL2_ttf -lp1world -lm
+hw06q04.to: In function `get_char_at':
+hw06q04.c:(.text+0x0): multiple definition of `get_char_at'
+model.to:model.c:(.text+0x0): first defined here
+hw06q04.to: In function `get_string_length':
+hw06q04.c:(.text+0x38): multiple definition of `get_string_length'
+model.to:model.c:(.text+0x34): first defined here
+hw06q04.to: In function `remove_last_char':
+hw06q04.c:(.text+0x8c): multiple definition of `remove_last_char'
+model.to:model.c:(.text+0x88): first defined here
+hw06q04.to: In function `is_palindrome':
+hw06q04.c:(.text+0xf0): multiple definition of `is_palindrome'
+model.to:model.c:(.text+0xc0): first defined here
+collect2: error: ld returned 1 exit status
+Makefile:49: recipe for target 'hw06q04.test' failed
+make: *** [hw06q04.test] Error 1
+exit: 0

@@ -1,0 +1,4 @@
+/usr/bin/make
+gcc -std=gnu99 -fdiagnostics-color -D'P1_RESOURCES=/usr/local/share/mesaclient/p1world' -c -o lab10ex02.o lab10ex02.c
+gcc -o lab10ex02 lab10ex02.o -lSDL2 -lSDL2_image -lSDL2_ttf -lp1world -lm
+exit: 0

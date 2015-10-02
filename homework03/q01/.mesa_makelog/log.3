@@ -1,0 +1,10 @@
+/usr/bin/make test
+gcc -std=gnu99 -fdiagnostics-color -c -o hw03q01.o hw03q01.c
+gcc -std=gnu99 -fdiagnostics-color -c -o hw03q01_test.o hw03q01_test.c
+[01m[Khw03q01_test.c:1:23:[m[K [01;31m[Kfatal error: [m[Klab03ex03.h: No such file or directory
+ #include "lab03ex03.h"
+[01;32m[K                       ^[m[K
+compilation terminated.
+Makefile:12: recipe for target 'hw03q01_test.o' failed
+make: *** [hw03q01_test.o] Error 1
+exit: 0

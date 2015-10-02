@@ -1,0 +1,10 @@
+/usr/bin/make test
+make: Warning: File 'Makefile' has modification time 48125 s in the future
+gcc -std=gnu99 -fdiagnostics-color -c -o hw03q05_test.o hw03q05_test.c
+gcc -o hw03q05_test hw03q05.o hw03q05_test.o -lSDL2 -lSDL2_image -lSDL2_ttf -lp1world -lm
+hw03q05_test.o: In function `main':
+hw03q05_test.c:(.text+0x108): undefined reference to `complete_maze'
+collect2: error: ld returned 1 exit status
+Makefile:15: recipe for target 'hw03q05_test' failed
+make: *** [hw03q05_test] Error 1
+exit: 0

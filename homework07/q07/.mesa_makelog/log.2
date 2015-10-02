@@ -1,0 +1,13 @@
+/usr/bin/make
+gcc -std=gnu99 -fdiagnostics-color -D'P1_RESOURCES=/usr/local/share/mesaclient/p1world' -c -o hw07q07.o hw07q07.c
+gcc -o hw07q07 hw07q07.o -lSDL2 -lSDL2_image -lSDL2_ttf -lp1world -lm
+hw07q07.o: In function `main':
+hw07q07.c:(.text+0x104): undefined reference to `append'
+hw07q07.c:(.text+0x124): undefined reference to `insert'
+hw07q07.c:(.text+0x144): undefined reference to `delete'
+hw07q07.c:(.text+0x164): undefined reference to `list'
+hw07q07.c:(.text+0x180): undefined reference to `edit'
+collect2: error: ld returned 1 exit status
+Makefile:58: recipe for target 'hw07q07' failed
+make: *** [hw07q07] Error 1
+exit: 0

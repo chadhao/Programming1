@@ -1,0 +1,10 @@
+/usr/bin/make test
+gcc -std=gnu99 -fdiagnostics-color -c -o lab03ex05.o lab03ex05.c
+gcc -std=gnu99 -fdiagnostics-color -c -o lab03ex05_test.o lab03ex05_test.c
+gcc -o lab03ex05_test lab03ex05.o lab03ex05_test.o -lSDL2 -lSDL2_image -lSDL2_ttf -lp1world -lm
+lab03ex05_test.o: In function `test_clean_up_world':
+lab03ex05_test.c:(.text+0x17c): undefined reference to `clean_up_world'
+collect2: error: ld returned 1 exit status
+Makefile:16: recipe for target 'lab03ex05_test' failed
+make: *** [lab03ex05_test] Error 1
+exit: 0

@@ -1,0 +1,26 @@
+/usr/bin/make
+gcc -std=gnu99 -fdiagnostics-color -c -o lab02ex04.o lab02ex04.c
+[01m[Klab02ex04.c:[m[K In function ‘[01m[Kdraw_hexagon[m[K’:
+[01m[Klab02ex04.c:27:5:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kfoward[m[K’ [-Wimplicit-function-declaration]
+     foward(100);
+[01;32m[K     ^[m[K
+[01m[Klab02ex04.c:34:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[KTurn[m[K’
+     Turn(60);
+[01;32m[K     ^[m[K
+[01m[Klab02ex04.c:[m[K In function ‘[01m[KMain[m[K’:
+[01m[Klab02ex04.c:45:16:[m[K [01;31m[Kerror: [m[K‘[01m[KCYAHN[m[K’ undeclared (first use in this function)
+     pen_colour(CYAHN);
+[01;32m[K                ^[m[K
+[01m[Klab02ex04.c:45:16:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Klab02ex04.c:50:16:[m[K [01;31m[Kerror: [m[K‘[01m[KYellow[m[K’ undeclared (first use in this function)
+     pen_colour(Yellow);
+[01;32m[K                ^[m[K
+[01m[Klab02ex04.c:51:5:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[KdrawHexagon[m[K’ [-Wimplicit-function-declaration]
+     drawHexagon();
+[01;32m[K     ^[m[K
+[01m[Klab02ex04.c:55:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kpen_Colour[m[K’
+     pen_Colour(magenta);
+[01;32m[K     ^[m[K
+Makefile:11: recipe for target 'lab02ex04.o' failed
+make: *** [lab02ex04.o] Error 1
+exit: 0

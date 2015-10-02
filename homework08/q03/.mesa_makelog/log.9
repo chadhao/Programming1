@@ -1,0 +1,11 @@
+/usr/bin/make
+gcc -std=gnu99 -fdiagnostics-color -D'P1_RESOURCES=/usr/local/share/mesaclient/p1world' -c -o hw08q03.o hw08q03.c
+[01m[Khw08q03.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Khw08q03.c:186:30:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kprint_video_game_details[m[K’ from incompatible pointer type
+     print_video_game_details(&game);
+[01;32m[K                              ^[m[K
+[01m[Khw08q03.c:43:6:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kstruct Video_Game *[m[K’ but argument is of type ‘[01m[Kstruct Video_Game **[m[K’
+ void print_video_game_details(struct Video_Game* game)
+[01;32m[K      ^[m[K
+gcc -o hw08q03 hw08q03.o -lSDL2 -lSDL2_image -lSDL2_ttf -lp1world -lm
+exit: 0

@@ -1,0 +1,12 @@
+ID: bug-0001
+Description: Initial four sets of poker failed in card.c, but the exact same algorithm works fine when implemented in main.c
+Status: In-progress
+
+ID: bug-0002
+Description: Function game_bet() in game.c can not filter empty input when betType is 2.
+Status: In-progress
+
+ID: bug-0003
+Description: fprintf in function player_save() in player.c can not write string into file correctly.
+Status: In-progress, fixed(13/06/2015)
+conclusion: It was nothing todo with fprintf. It's because of variable "filename" was formerly used in player_load() and did not free.

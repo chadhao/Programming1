@@ -1,0 +1,8 @@
+/usr/bin/make test
+gcc -o lab03ex04_test lab03ex04.o lab03ex04_test.o -lSDL2 -lSDL2_image -lSDL2_ttf -lp1world -lm
+lab03ex04_test.o: In function `test_clean_up_world':
+lab03ex04_test.c:(.text+0x178): undefined reference to `clean_up_world'
+collect2: error: ld returned 1 exit status
+Makefile:16: recipe for target 'lab03ex04_test' failed
+make: *** [lab03ex04_test] Error 1
+exit: 0

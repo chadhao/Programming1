@@ -1,0 +1,20 @@
+/usr/bin/make test
+gcc -std=gnu99 -fdiagnostics-color -c -o hw03q03.o hw03q03.c
+gcc -std=gnu99 -fdiagnostics-color -c -o hw03q03_test.o hw03q03_test.c
+[01m[Khw03q03_test.c:[m[K In function ‘[01m[Ktest1[m[K’:
+[01m[Khw03q03_test.c:37:5:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kmove_beepers[m[K’ [-Wimplicit-function-declaration]
+     move_beepers();
+[01;32m[K     ^[m[K
+gcc -o hw03q03_test hw03q03.o hw03q03_test.o -lSDL2 -lSDL2_image -lSDL2_ttf -lp1world -lm
+hw03q03_test.o: In function `test1':
+hw03q03_test.c:(.text+0x7c): undefined reference to `move_beepers'
+hw03q03_test.o: In function `test2':
+hw03q03_test.c:(.text+0x180): undefined reference to `move_beepers'
+hw03q03_test.o: In function `test3':
+hw03q03_test.c:(.text+0x284): undefined reference to `move_beepers'
+hw03q03_test.o: In function `test4':
+hw03q03_test.c:(.text+0x388): undefined reference to `move_beepers'
+collect2: error: ld returned 1 exit status
+Makefile:15: recipe for target 'hw03q03_test' failed
+make: *** [hw03q03_test] Error 1
+exit: 0

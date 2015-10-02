@@ -1,0 +1,30 @@
+# Source directory
+SRCDIR := .
+# Build directories
+BUILDDIRS := adventure 
+# Variable data
+VARLIBDIR := /var/games/bsdgames
+
+# Compilation details
+CC := gcc
+CXX := g++
+OPTIMIZE := -g -O2
+WARNING := -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wpointer-arith -Wcast-align -Wcast-qual -Wwrite-strings
+CXX_WARNING := -Wall -W -Wpointer-arith -Wcast-align -Wcast-qual -Wwrite-strings -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2
+CFLAGS := $(OPTIMIZE) $(WARNING) -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2
+CXXFLAGS := $(OPTIMIZE) $(CXX_WARNING) -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2
+LDFLAGS := -Wl,-z,relro
+FGETLN_DEFS := 
+GETLOADAVG_DEFS := 
+STRLCPY_DEFS := 
+GETPROGNAME_DEFS := 
+NCURSES_LIB := -lncurses
+NCURSES_INCS := 
+OPENSSL_LIB := 
+OPENSSL_INCS := 
+BASE_INCS := -Iinclude $(NCURSES_INCS) $(OPENSSL_INCS)
+BASE_LIBS := 
+YACC := bison -y
+LEX := flex
+LEX_LIB := -lfl
+

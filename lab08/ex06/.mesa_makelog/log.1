@@ -1,0 +1,15 @@
+/usr/bin/make
+gcc -std=gnu99 -fdiagnostics-color -c -o lab08ex06.o lab08ex06.c
+[01m[Klab08ex06.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Klab08ex06.c:33:32:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kjoint[m[K’
+  printf("JOIN RESULT 1: %s \n" joint);
+[01;32m[K                                ^[m[K
+[01m[Klab08ex06.c:37:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kjoint[m[K’
+  char* joint = join_three_strings(p1, hello, students);
+[01;32m[K        ^[m[K
+[01m[Klab08ex06.c:32:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kjoint[m[K’ was here
+  char* joint = join_three_strings(hello, p1, students);
+[01;32m[K        ^[m[K
+Makefile:10: recipe for target 'lab08ex06.o' failed
+make: *** [lab08ex06.o] Error 1
+exit: 0

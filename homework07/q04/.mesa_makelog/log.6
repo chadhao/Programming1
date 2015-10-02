@@ -1,0 +1,29 @@
+/usr/bin/make
+gcc -std=gnu99 -fdiagnostics-color -D'P1_RESOURCES=/usr/local/share/mesaclient/p1world' -c -o hw07q04.o hw07q04.c
+[01m[Khw07q04.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Khw07q04.c:45:7:[m[K [01;31m[Kerror: [m[Karray size missing in ‘[01m[Kinput_buffer[m[K’
+  char input_buffer[];
+[01;32m[K       ^[m[K
+[01m[Khw07q04.c:49:2:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kprintf[m[K’ [-Wimplicit-function-declaration]
+  printf("Please enter a string: ");
+[01;32m[K  ^[m[K
+[01m[Khw07q04.c:49:2:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kprintf[m[K’
+[01m[Khw07q04.c:50:2:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kscanf[m[K’ [-Wimplicit-function-declaration]
+  scanf("%s", &input_buffer);
+[01;32m[K  ^[m[K
+[01m[Khw07q04.c:50:2:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kscanf[m[K’
+[01m[Khw07q04.c:55:46:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kget_substring[m[K’ from incompatible pointer type
+  printf("Substring is \"%s\"", get_substring(&input_buffer+index, &input_buffer+length));
+[01;32m[K                                              ^[m[K
+[01m[Khw07q04.c:19:7:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kchar *[m[K’ but argument is of type ‘[01m[Kchar (*)[1][m[K’
+ char* get_substring(char* start, char* end)
+[01;32m[K       ^[m[K
+[01m[Khw07q04.c:55:67:[m[K [01;35m[Kwarning: [m[Kpassing argument 2 of ‘[01m[Kget_substring[m[K’ from incompatible pointer type
+  printf("Substring is \"%s\"", get_substring(&input_buffer+index, &input_buffer+length));
+[01;32m[K                                                                   ^[m[K
+[01m[Khw07q04.c:19:7:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kchar *[m[K’ but argument is of type ‘[01m[Kchar (*)[1][m[K’
+ char* get_substring(char* start, char* end)
+[01;32m[K       ^[m[K
+Makefile:54: recipe for target 'hw07q04.o' failed
+make: *** [hw07q04.o] Error 1
+exit: 0

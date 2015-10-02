@@ -1,0 +1,21 @@
+/usr/bin/make test
+gcc -std=gnu99 -fdiagnostics-color -c -o lab06ex06.o lab06ex06.c
+[01m[Klab06ex06.c:[m[K In function ‘[01m[Kescape_room[m[K’:
+[01m[Klab06ex06.c:69:2:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kprintf[m[K’ [-Wimplicit-function-declaration]
+  printf("%d\n", get_current_robot_orientation());
+[01;32m[K  ^[m[K
+[01m[Klab06ex06.c:69:2:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kprintf[m[K’
+[01m[Klab06ex06.c:69:2:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kget_current_robot_orientation[m[K’ [-Wimplicit-function-declaration]
+gcc -o lab06ex06_test lab06ex06.o lab06ex06_test.o -lSDL2 -lSDL2_image -lSDL2_ttf -lp1world -lm
+./lab06ex06_test
+INFO: Display #0: current display mode is 1680x1050px @ 60hz. 
+Starting Unit Tests: 
+0
+T1: is "is_robot_dead()"?  - - - - - - - - - - PASSED: Robot should survive
+T2: is "is_item_present(get_current_robot_x(), get_current_robot_y())"? FAILED: There should be a beeper at the robot's location
+
+Summary:
+Total Passed: 1 out of 2
+Total Failed: 1 out of 2
+Ending Unit Tests!
+exit: 0

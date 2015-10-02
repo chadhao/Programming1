@@ -1,0 +1,23 @@
+/usr/bin/make
+gcc -std=gnu99 -fdiagnostics-color -D'P1_RESOURCES=/usr/local/share/mesaclient/p1world' -c -o hw07q04.o hw07q04.c
+[01m[Khw07q04.c:19:1:[m[K [01;35m[Kwarning: [m[Kreturn type defaults to ‘[01m[Kint[m[K’
+ get_substring(char* start, char* end)
+[01;32m[K ^[m[K
+[01m[Khw07q04.c:19:1:[m[K [01;31m[Kerror: [m[Kconflicting types for ‘[01m[Kget_substring[m[K’
+In file included from [01m[Khw07q04.c:17:0[m[K:
+[01m[Khw07q04.h:7:7:[m[K [01;36m[Knote: [m[Kprevious declaration of ‘[01m[Kget_substring[m[K’ was here
+ char* get_substring(char* start, char* end);
+[01;32m[K       ^[m[K
+[01m[Khw07q04.c:[m[K In function ‘[01m[Kget_substring[m[K’:
+[01m[Khw07q04.c:30:2:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kmalloc[m[K’ [-Wimplicit-function-declaration]
+  char* new_arr = malloc((length+1) * sizeof(char));
+[01;32m[K  ^[m[K
+[01m[Khw07q04.c:30:18:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kmalloc[m[K’
+  char* new_arr = malloc((length+1) * sizeof(char));
+[01;32m[K                  ^[m[K
+[01m[Khw07q04.c:40:2:[m[K [01;35m[Kwarning: [m[Kreturn makes integer from pointer without a cast
+  return new_arr;
+[01;32m[K  ^[m[K
+Makefile:54: recipe for target 'hw07q04.o' failed
+make: *** [hw07q04.o] Error 1
+exit: 0

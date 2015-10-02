@@ -1,0 +1,10 @@
+/usr/bin/make
+gcc -std=gnu99 -fdiagnostics-color -c -o test01q03.o test01q03.c
+[01m[Ktest01q03.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Ktest01q03.c:17:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kn[m[K’ undeclared (first use in this function)
+   printf("%d * 2 = %d\n", n + 1, (n+1) * 2);
+[01;32m[K                           ^[m[K
+[01m[Ktest01q03.c:17:27:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+Makefile:10: recipe for target 'test01q03.o' failed
+make: *** [test01q03.o] Error 1
+exit: 0

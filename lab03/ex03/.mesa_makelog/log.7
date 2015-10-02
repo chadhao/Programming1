@@ -1,0 +1,13 @@
+/usr/bin/make test
+gcc -std=gnu99 -fdiagnostics-color -c -o lab03ex03.o lab03ex03.c
+[01m[Klab03ex03.c:[m[K In function ‘[01m[Kmove_along_corridor[m[K’:
+[01m[Klab03ex03.c:38:3:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Knot[m[K’ [-Wimplicit-function-declaration]
+   if (not(is_space_in_front_of_robot_clear()))
+[01;32m[K   ^[m[K
+gcc -o lab03ex03_test lab03ex03.o lab03ex03_test.o -lSDL2 -lSDL2_image -lSDL2_ttf -lp1world -lm
+lab03ex03.o: In function `move_along_corridor':
+lab03ex03.c:(.text+0x6c): undefined reference to `not'
+collect2: error: ld returned 1 exit status
+Makefile:15: recipe for target 'lab03ex03_test' failed
+make: *** [lab03ex03_test] Error 1
+exit: 0

@@ -1,0 +1,363 @@
+Programming 1 Knowledge Progress Checklist:
+===========================================
+
+Student Name: Duan Hao 
+Student ID: 1426688  
+
+Use the following checklist to rate your current understanding of, and ability 
+to apply, the following topics as covered in the first five weeks of 
+Programming 1.
+
+You may have already completed this previously as a self-directed exercise. 
+Please complete this version of the checklist based upon your present
+understanding.
+
+Rate your understanding using the following criteria:
+
+- Confident:
+    + You understand this idea.
+    + You can use it in the lab exercises and homework questions.
+    + You could explain the idea to one of your peers.
+    + You feel ready to use this knowledge in the mid-semester test.
+- Familiar:
+    + You have heard the idea before.
+    + You may have used it in the lab exercises or homework questions.
+    + You may have gaps in your knowledge as to when the idea is applied.
+    + You may be able to use it in the mid-semester test.
+- Unknown:
+    + You have not heard the idea before.
+    + You have not used this in the lab exercises of homework questions.
+    + You would not be able to apply this in the mid-semester test.
+
+
+Week 1:                                             Self-Rating:
+
+- P1 Turtle World:                                | 
+    + Creating a Turtle World                     | Confident
+    + Move the turtle forward                     | Confident
+    + Turn the turtle                             | Confident
+    + Control the turtle's pen: up/down/ colour   | Confident
+    + Hide/Show the turtle                        | Confident
+- Sequence                                        | Confident
+- The main function.                              | Confident
+- What is an algorithm?                           | 
+    + Planning                                    | Confident
+    + Implementing                                | Confident
+- void Functions:                                 | 
+    + Code reuse.                                 | Confident
+    + Declaring a function: Prototypes.           | Confident
+    + Defining a function: The function's body.   | Confident
+    + Calling a function.                         | Confident
+- Linux Operating System:                         | 
+    + File system                                 | Confident
+
+
+Week 2:                                             Self-Rating:
+
+- Algorithm planning:                             | 
+    + Flowcharts:                                 | 
+        - Terminators                             | Familiar
+        - Process steps                           | Familiar
+        - Decisions                               | Familiar
+        - Input/Output                            | Familiar
+    + Using multiple flowcharts                   | Familiar
+- Algorithm implementation:                       | 
+    + Using void functions                        | Confident
+- Whitespace:                                     | 
+    + Good code style and layout                  | Confident
+- Functions:                                      | 
+    + Naming                                      | Confident
+    + Length                                      | Confident
+- Commenting:                                     | 
+    + C-style multi-line comment                  | Confident
+    + Single line comment                         | Confident
+    + Function comments                           | Confident
+    + Source code file comments                   | Confident
+- Tool Chain:                                     | 
+    + Editor                                      | Confident
+    + Compiler                                    | Familiar
+    + Linker                                      | Familiar
+    + Executable                                  | Familiar
+    + Make                                        | Familiar
+- Bugs:                                           | 
+    + Syntax errors                               | Confident
+    + Semantic errors                             | Confident
+    + Runtime errors                              | Confident
+- Debugging:                                      | 
+    + P1 World:                                   | 
+        - Debug Output, print_stub                | Confident
+        - Delay Time                              | Confident
+        - Debug key bindings                      | Familiar
+- Repetition:                                     | 
+    + The for loop:                               | 
+        - Iteration                               | Confident
+        - Nested for loops                        | Confident
+- Functions:                                      | 
+    + Parameters, Multiple parameters             | Confident
+    + Calling                                     | Confident
+- Expressions:                                    | 
+    + Mathematical operations                     | 
+        - Addition, Subtraction                   | Confident
+        - Multiplication, Division                | Confident
+        - Modulus                                 | Confident
+        - Brackets                                | Confident
+
+
+Week 3:                                             Self-Rating:
+
+- P1 Robot World:                                 | 
+    + Robot World:                                | 
+        - Dimensions                              | Confident
+        - Floor                                   | Confident
+        - Walls                                   | Confident
+        - Sandbox mode                            | Confident
+    + Robot Commands:                             | 
+        - Move the robot forwards                 | Confident
+        - Turn the robot left                     | Confident
+        - Pick up an item with the robot          | Confident
+        - Drop an item from the robot             | Confident
+    + Robot death!                                | Confident
+    + Robot State Tests:                          | 
+        - Is space in front of robot clear?       | Confident
+        - Is robot facing wall?                   | Confident
+        - Is item on ground at robot?             | Confident
+        - Is ground at robot clear?               | Confident
+        - Is robot carrying items?                | Confident
+- Unit Tests                                      | 
+    + make test                                   | Confident
+- Repetition:                                     | 
+    + The while loop                              | Confident
+    + The do while loop                           | Confident
+    + Flowcharts                                  | Confident
+- Selection:                                      | 
+    + The if statement.                           | Confident
+    + The if else statement.                      | Confident
+    + Flowcharts                                  | Confident
+- How to program...                               | 
+    + Program construction                        | Confident
+    + Planning programs                           | Confident
+    + Writing programs                            | Confident
+
+
+Week 4:                                             Self-Rating:
+
+- Variables                                       | 
+    + Types                                       | Confident
+    + sizeof                                      | Confident
+    + Local variables                             | Confident
+    + Assignment                                  | Confident
+    + Using variables                             | 
+        - Mathematical expressions                | Confident
+        - Increment                               | Confident
+        - Decrement                               | Confident
+- The console:                                    | 
+    + Standard output: printf                     | 
+        - Outputting variables                    | Confident
+        - Format specifiers                       | Confident
+    + Standard input: scanf                       | Confident
+- Literals:                                       | 
+    + Integers                                    | Confident
+- Address-of operator (&)                         | Confident
+- The return keyword.                             | Confident
+- Random numbers:                                 | 
+    + srand()                                     | Confident
+    + time()                                      | Confident
+    + rand()                                      | Confident
+- Assignment operators:                           | 
+    + +=, -=, *=, /=, ++, --                      | Confident
+    + Prefix vs postfix.                          | Confident
+- Relational operators:                           | 
+    + Equality? ==                                | Confident
+    + Not equal? !=                               | Confident
+    + Greater than? >                             | Confident
+    + Greater than or equal? >=                   | Confident
+    + Less than? <                                | Confident
+    + Less than or equal? <=                      | Confident
+    + Assignment vs comparison.                   | Confident
+    + Usage with if, for, and while.              | Confident
+- Logical Operators:                              | 
+    + AND: &&                                     | Confident
+    + OR: ||                                      | Confident
+    + NOT: !                                      | Confident
+- The char type:                                  |  
+    + Character literals.                         | Confident
+    + ASCII                                       | Confident
+    + Character comparison.                       | Confident
+    + Lexicographic order.                        | Confident
+    + Character arithmetic.                       | Confident
+
+
+Week 5:                                                Self-Rating:
+
+- Arrays:                                            | 
+    + Declaring                                      | Confident
+    + Accessing elements.                            | Confident
+    + Looping and arrays.                            | Confident
+    + Initialising arrays.                           | Confident
+    + sizeof and arrays.                             | Confident
+    + Single dimensional.                            | Confident
+    + Multi-dimensional.                             | Confident
+    + Passing arrays as parameters.                  | Confident
+- Strings:                                           | 
+    + char arrays.                                   | Confident
+    + Initialising char arrays with string literals. | Confident
+    + Using printf with strings.                     |Confident
+- Escape Sequence Character Codes.                   | 
+    + The null character.                            | Confident
+    + Newline.                                       | Confident
+    + Tab, Single Quote, Double Quote, etc...        | Confident
+- The string.h library:                              | 
+    + strlen                                         | Confident
+    + strcmp                                         | Confident
+    + strcpy                                         | Confident
+- Printing to a char buffer:                         | 
+    + sprintf                                        | Confident
+    + Converting variable values into strings.       | Confident
+- P1 Image World:                                    | 
+    + The computer screen as an array.               | Confident
+    + Pixels: Red, Green, Blue and Alpha channels.   | Confident
+    + Functionality:                                 | 
+        - Create image world.                        | Confident
+        - Get screen width and height.               | Confident
+        - Creating an image.                         | Confident
+        - Loading a png file.                        | Confident
+        - Get an image's width and height.           | Confident
+        - Drawing an image to the screen.            | Confident
+        - Getting access to an image's pixels.       | Confident
+        - Writing to an image's pixels.              | Confident
+
+Week 6:                                                Self-Rating:
+
+- Memory                                             |
+    + Address                                        | Confident
+    + Size                                           | Confident
+    + Variable lifetime, Scope                       | 
+        - Local                                      | Confident
+        - Parameter                                  | Confident
+        - Global                                     | Confident
+        - Activations                                | Confident
+        - Constants                                  | Confident
+    + #define macro                                  | Confident
+- The Stack                                          | Familiar
+- Algorithms                                         |
+    + Top-down planning                              | Familiar
+    + Bottom-up planning                             | Familiar
+    + Structure charts                               | Familiar
+
+Week 7:                                                Self-Rating:
+
+- The Call Stack                                     |
+    + Push, pop                                      | Familiar
+    + Stack frames                                   | Familiar
+    + Stack pointer                                  | Familiar
+    + Variable addresses                             | Confident
+    + Function addresses                             | 
+        -  Recursion                                 | Familiar
+    + Base case                                      | Unknown
+    + Direct recursion                               | Familiar
+    + Indirect recursion                             | Familiar
+    + Stack overflow                                 | Familiar
+- Reentrancy                                         | Familiar
+
+Week 8:                                                Self-Rating:
+- Pointers                                           |
+    + Declaring                                      | Confident
+    + Indirection/Dereferencing                      | Familiar
+    + The null pointer                               | Confident
+    + Pass by Reference                              |
+        - Pass by Value                              | Confident
+        - Out parameters                             | Familiar
+    + Validating pointers                            | Unknown
+    + Wild pointers                                  | Unknown
+    + Pointer type casting                           | Confident
+    + Dynamic memory                                 |
+        - void*                                      | Familiar
+        - malloc                                     | Confident
+        - free                                       | Confident
+    + Arrays vs Pointers                             | Confident
+    + Pointer Arithmetic                             | Confident
+    + Character arrays, char*                        |
+        - main's arguments                           | Confident
+        - argc                                       | Confident
+        - argv                                       | Confident
+- Multidimensional arrays                            | Confident
+- Arrays of pointers                                 | Confident
+- Ragged (Jagged) arrays                             | Unknown
+
+Week 9:                                                Self-Rating:
+
+- File Input/Output                                  |
+    + Files                                          |
+        - Text files                                 | Confident
+        - Binary files                               | Confident
+    + Streams                                        | Confident
+    + File pointers                                  | Confident
+    + stdio.h                                        |
+        - fopen, fclose                              | Confident
+        - fprintf, fscanf                            | Confident
+        - fread, fwrite                              | Familiar
+    + Endianism                                      | Confident
+- Fields and records                                 | Confident
+- Control flow                                       |
+    + break, continue                                | Confident
+    + switch, case, default                          | Familiar
+    + Conditional operator                           | Confident
+    + goto                                           | Confident
+    + return                                         | Confident
+
+Week 10:                                                Self-Rating:
+
+- Structures:                                        |
+    + Declaring                                      | Confident
+    + Members                                        | Confident
+    + Structure variables                            | Confident
+    + The . operator                                 | Confident
+    + Dynamically allocating                         | Confident
+    + Accessing structs via pointers                 | Confident
+    + Data abstraction                               | Confident
+- typedef                                            | Familiar
+- Linked lists:                                      | 
+    + Nodes                                          | Confident
+    + Searching                                      | Confident
+    + Adding a node                                  | Confident
+    + Removing a node                                | Confident
+- Enumeration                                        | Familiar
+- Bitwise operations:                                | 
+    + Bitwise NOT ~                                  | Familiar
+    + Bitwise OR  |                                  | Familiar
+    + Bitwise XOR ^                                  | Familiar
+    + Bitwise AND &                                  | Familiar
+    + Left Shift <<                                  | Familiar
+    + Right Shift >>                                 | Familiar
+    + Compound bitwise assignment                    | Familiar
+
+Week 11:                                                Self-Rating:
+
+- The C Toolchain                                    |
+    + The preprocessor                               |
+        - Header guards                              | Familiar
+        - #pragma once                               | Familiar
+    + The compiler                                   | Familiar
+    + The assembler                                  | Familiar
+    + The linker                                     | Familiar
+    + Multi-file projects                            | Familiar
+    + .h header files                                | Familiar
+    + Make                                           | Familiar
+    + Make rules                                     | Familiar
+    + Passing arrays as parameters.                  | Confident
+- C Programming in Microsoft Windows                 |
+    + Visual Studio                                  | Confident
+    + Solution, Projects, Source files               | Confident
+    + Compiling                                      | Confident
+    + Debugging                                      | Confident
+    + MSDN documents                                 | Confident
+- Function pointers                                  |
+    + Declaring                                      | Familiar
+    + Comparators                                    | Familiar
+    + Callbacks                                      | Familiar
+    + Functional abstraction                         | Familiar
+
+Week 12:                                                Self-Rating:
+
+- Revision:                                          | 
+

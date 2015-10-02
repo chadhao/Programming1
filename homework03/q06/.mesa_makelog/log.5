@@ -1,0 +1,39 @@
+/usr/bin/make
+gcc -std=gnu99 -fdiagnostics-color -c -o hw03q06.o hw03q06.c
+gcc -std=gnu99 -fdiagnostics-color -c -o hw03q06_test.o hw03q06_test.c
+[01m[Khw03q06_test.c:[m[K In function ‘[01m[Kis_removable_wall[m[K’:
+[01m[Khw03q06_test.c:37:57:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+    (is_maze_wall(mx, my + 1) ^ is_maze_wall(mx, my - 1));
+[01;32m[K                                                         ^[m[K
+[01m[Khw03q06_test.c:38:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K}[m[K’ token
+ }
+[01;32m[K ^[m[K
+[01m[Khw03q06_test.c:38:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+[01m[Khw03q06_test.c:[m[K In function ‘[01m[Kcreate_maze[m[K’:
+[01m[Khw03q06_test.c:47:4:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Ksetup_wall[m[K’
+    setup_wall();
+[01;32m[K    ^[m[K
+In file included from [01m[K/usr/local/include/p1staff.h:5:0[m[K,
+                 from [01m[Khw03q06_test.c:6[m[K:
+[01m[K/usr/local/include/p1sandbox.h:33:6:[m[K [01;36m[Knote: [m[Kdeclared here
+ void setup_wall(int x, int y);
+[01;32m[K      ^[m[K
+[01m[Khw03q06_test.c:52:2:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kset_floor[m[K’ [-Wimplicit-function-declaration]
+  set_floor(5, 1);
+[01;32m[K  ^[m[K
+[01m[Khw03q06_test.c:57:2:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kset_beeper[m[K’ [-Wimplicit-function-declaration]
+  set_beeper(5, height - 1); 
+[01;32m[K  ^[m[K
+[01m[Khw03q06_test.c:65:3:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kremovable_wall[m[K’ [-Wimplicit-function-declaration]
+   for(; !removable_wall(mx, my) && my < maze_height; my++)
+[01;32m[K   ^[m[K
+In file included from [01m[K/usr/local/include/p1staff.h:7:0[m[K,
+                 from [01m[Khw03q06_test.c:6[m[K:
+[01m[Khw03q06_test.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Khw03q06_test.c:109:31:[m[K [01;31m[Kerror: [m[K‘[01m[KendY[m[K’ undeclared (first use in this function)
+     P1U_ASSERT_EQUAL(message, endY, get_current_robot_y());
+[01;32m[K                               ^[m[K
+[01m[Khw03q06_test.c:109:31:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+Makefile:12: recipe for target 'hw03q06_test.o' failed
+make: *** [hw03q06_test.o] Error 1
+exit: 0
