@@ -1,9 +1,0 @@
-/usr/bin/make
-cc -std=gnu99 -fdiagnostics-color   -c -o hw04q04.o hw04q04.c
-gcc -o hw04q04 hw04q04.o -lSDL2 -lSDL2_image -lSDL2_ttf -lp1world -lm
-hw04q04.o: In function `calculator':
-hw04q04.c:(.text+0x6c): undefined reference to `msg_sender'
-collect2: error: ld returned 1 exit status
-Makefile:14: recipe for target 'hw04q04' failed
-make: *** [hw04q04] Error 1
-exit: 0
